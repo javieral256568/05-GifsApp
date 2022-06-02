@@ -1,0 +1,18 @@
+<!-- ini sidebar -->
+<div class="bg-dark border-right p3" id="sidebar"> 
+    <h3 class="text-light"> Gifts App </h3>
+
+    <div class="list-group list-reset">
+        
+        <a *ngFor="let cadenaBusqueda of historial" 
+            href="#" 
+            class="list-group-item list-group-item-action"
+            (click)="bucarEnLocalStorage(cadenaBusqueda)"
+            > 
+          {{ cadenaBusqueda | titlecase }} 
+        </a>
+
+    </div>
+
+  </div>
+  <!-- end sidebar -->
